@@ -1,0 +1,4 @@
+date,open,close,signal,target_at_open,position_after_open,position_before_open,overnight_asset_return,intraday_asset_return,overnight_strategy_return,intraday_strategy_return,daily_growth,equity,turnover,cost_rate,net_daily_growth,equity_after_cost
+2026-09-07,10.0,10.0,1,0,0,0,0.0,0.0,0.0,0.0,1.0,1.0,0,0.0,1.0,1.0
+2026-09-08,11.0,12.0,0,1,1,0,0.10000000000000009,0.09090909090909083,0.0,0.09090909090909083,1.0909090909090908,1.0909090909090908,1,0.001,1.0898181818181818,1.0898181818181818
+2026-09-09,9.0,8.5,0,0,0,1,-0.25,-0.05555555555555558,-0.25,-0.0,0.75,0.8181818181818181,1,0.001,0.74925,0.8165462727272726
