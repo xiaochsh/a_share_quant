@@ -1,0 +1,6 @@
+date,market_open,is_suspended,target_position,position_before,trade,position_after
+2026-09-14,True,False,0,0,0,0
+2026-09-15,True,True,1,0,0,0
+2026-09-16,True,False,1,0,1,1
+2026-09-17,True,True,0,1,0,1
+2026-09-18,True,False,0,1,-1,0

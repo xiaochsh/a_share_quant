@@ -1,12 +1,17 @@
 # a_share_quant
 
-A 股量化学习项目。当前学习进度见 [docs/progress.md](docs/progress.md)。
+A 股量化学习项目。
+
+- [完整学习路线](docs/learning-roadmap.md)
+- [当前学习进度](docs/progress.md)
+- [关键知识与 Python 用法汇总](docs/learning-notes.md)
 
 ## 初始化环境（Linux / Windows）
 
 先安装 Python 3.10 或更高版本。首次安装依赖需要联网。
 虚拟环境 `.venv` 是本项目独立存放 Python 和第三方工具的目录；
-`requirements.txt` 记录需要安装的工具，包括处理表格的 Pandas 和绘图的 Matplotlib。
+`requirements.txt` 记录需要安装的工具，包括处理表格的 Pandas、绘图的 Matplotlib，
+以及获取公开行情数据的 AKShare。
 
 在项目根目录运行以下命令。
 

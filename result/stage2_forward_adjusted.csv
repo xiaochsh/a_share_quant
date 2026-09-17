@@ -1,0 +1,4 @@
+date,event,close,adjustment_factor,qfq_close,raw_price_return,qfq_return
+2026-09-14,normal,19.5,1.0,9.75,,
+2026-09-15,before_ex_rights,20.0,1.0,10.0,0.02564102564102555,0.02564102564102555
+2026-09-16,10_for_10_ex_rights,10.1,2.0,10.1,-0.495,0.010000000000000009

@@ -1,12 +1,12 @@
-"""Day 6：生成均线信号，并在简化假设下计算策略净值。"""
+"""简单均线策略回测任务：生成均线信号，并在简化假设下计算策略净值。"""
 
 from pathlib import Path
 
 import pandas as pd
 
 root = Path(__file__).resolve().parent.parent
-# 沿用 Day 5 的虚构教学数据。
-df = pd.read_csv(root / "data/stock_day5_demo.csv", dtype={"code": str})
+# 沿用均线计算与绘图任务的虚构教学数据。
+df = pd.read_csv(root / "data/stage1_moving_average_sample.csv", dtype={"code": str})
 df["date"] = pd.to_datetime(df["date"])
 df = df.sort_values(["code", "date"])
 
@@ -62,7 +62,7 @@ columns = [
 ]
 print(df[columns].to_string(index=False))
 
-output = root / "result/day6_signals.csv"
+output = root / "result/stage1_moving_average_backtest.csv"
 output.parent.mkdir(parents=True, exist_ok=True)
 df[columns].to_csv(output, index=False)
 print("\n信号已保存：", output)

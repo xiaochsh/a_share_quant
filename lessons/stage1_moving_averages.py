@@ -1,4 +1,4 @@
-"""Day 5：使用虚构教学数据计算并绘制 5 日和 20 日均线。"""
+"""均线计算与绘图任务：使用虚构教学数据计算并绘制 5 日和 20 日均线。"""
 
 from pathlib import Path
 
@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 root = Path(__file__).resolve().parent.parent
 # DEMO 为虚构股票，价格仅用于手算核对，不是真实行情。
-df = pd.read_csv(root / "data/stock_day5_demo.csv", dtype={"code": str})
+df = pd.read_csv(root / "data/stage1_moving_average_sample.csv", dtype={"code": str})
 df["date"] = pd.to_datetime(df["date"])
 df = df.sort_values(["code", "date"])
 
@@ -51,7 +51,7 @@ ax.legend()
 ax.grid(alpha=0.25)
 fig.tight_layout()
 
-output = root / "result/day5_ma_trading.png"
+output = root / "result/stage1_moving_average_trading_axis.png"
 output.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(output, dpi=150)
 plt.close(fig)

@@ -1,11 +1,11 @@
-"""Day 7：对比有未来数据泄漏和无泄漏的均线回测。"""
+"""回测时序与费用检查任务：对比有未来数据泄漏和无泄漏的均线回测。"""
 
 from pathlib import Path
 
 import pandas as pd
 
 root = Path(__file__).resolve().parent.parent
-df = pd.read_csv(root / "data/stock_day5_demo.csv", dtype={"code": str})
+df = pd.read_csv(root / "data/stage1_moving_average_sample.csv", dtype={"code": str})
 df["date"] = pd.to_datetime(df["date"])
 df = df.sort_values(["code", "date"])
 
@@ -18,7 +18,7 @@ df["ma20"] = df.groupby("code")["close"].transform(
 valid = df["ma5"].notna() & df["ma20"].notna()
 df["signal"] = (valid & (df["ma5"] > df["ma20"])).astype(int)
 
-# 继续沿用 Day 6 的教学假设：开盘价等于上一交易日收盘价。
+# 继续沿用简单均线策略回测任务的教学假设：开盘价等于上一交易日收盘价。
 df["open"] = df.groupby("code")["close"].shift(1)
 df["open"] = df["open"].fillna(df["close"])
 df["open_to_close_return"] = df["close"] / df["open"] - 1
@@ -49,7 +49,7 @@ columns = [
 ]
 print(df[columns].tail(7).to_string(index=False))
 
-output = root / "result/day7_leakage_comparison.csv"
+output = root / "result/stage1_lookahead_bias_comparison.csv"
 output.parent.mkdir(parents=True, exist_ok=True)
 df[columns].to_csv(output, index=False)
 

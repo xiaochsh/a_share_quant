@@ -1,0 +1,4 @@
+date,event,close,shares,raw_price_return,position_value,holding_value_return
+2026-09-14,normal,19.5,100,,1950.0,
+2026-09-15,before_ex_rights,20.0,100,0.02564102564102555,2000.0,0.02564102564102555
+2026-09-16,10_for_10_ex_rights,10.1,200,-0.495,2020.0,0.010000000000000009

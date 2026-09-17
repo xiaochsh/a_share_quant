@@ -1,0 +1,6 @@
+date,code,is_listed,is_suspended,is_risk_warning,has_enough_history,exclusion_reason,in_pool
+2026-09-16,600001,True,False,False,True,eligible,True
+2026-09-16,000002,True,True,False,True,suspended,False
+2026-09-16,300003,True,False,True,True,risk_warning,False
+2026-09-16,688004,False,False,False,False,not_listed,False
+2026-09-16,600005,True,False,False,False,insufficient_history,False

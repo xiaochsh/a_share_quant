@@ -1,0 +1,6 @@
+date,price_state,has_opposing_liquidity,target_position,position_before,trade,position_after,fill_status
+2026-09-14,normal,True,0,0,0,0,no_trade_needed
+2026-09-15,limit_up,False,1,0,0,0,blocked_no_seller
+2026-09-16,limit_up,True,1,0,1,1,filled
+2026-09-17,limit_down,False,0,1,0,1,blocked_no_buyer
+2026-09-18,limit_down,True,0,1,-1,0,filled

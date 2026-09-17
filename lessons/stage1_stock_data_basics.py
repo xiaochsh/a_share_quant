@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 读取CSV文件
-df = pd.read_csv("data/stock_day4.csv")
+df = pd.read_csv("data/stage1_stock_daily_sample.csv")
 
 # 查看前5行
 print("前5行数据：")
@@ -59,4 +59,4 @@ invalid_price = df[
 print("\n价格关系异常的数据：")
 print(invalid_price)
 
-df.to_csv("result/stock_day4_result.csv", index=False)
+df.to_csv("result/stage1_stock_daily_checked.csv", index=False)

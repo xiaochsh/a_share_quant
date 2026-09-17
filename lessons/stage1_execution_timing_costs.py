@@ -1,4 +1,4 @@
-"""Day 7：拆分隔夜收益与日内收益，检查开盘成交时序。"""
+"""回测时序与费用检查任务：拆分隔夜收益与日内收益，检查开盘成交时序。"""
 
 from pathlib import Path
 
@@ -70,7 +70,7 @@ df["equity_after_cost"] = df["net_daily_growth"].cumprod()
 
 print(df.to_string(index=False))
 
-output = root / "result/day7_timing.csv"
+output = root / "result/stage1_execution_timing_costs.csv"
 output.parent.mkdir(parents=True, exist_ok=True)
 df.to_csv(output, index=False)
 print(f"\n最终净值：{df['equity'].iloc[-1]:.6f}")
