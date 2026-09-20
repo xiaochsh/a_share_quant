@@ -1,0 +1,5 @@
+date,code,selected,price,target_weight,target_value,theoretical_shares
+2026-03-06,A,True,10.0,0.3,30000.0,3000.0
+2026-03-06,B,True,20.0,0.3,30000.0,1500.0
+2026-03-06,C,True,50.0,0.3,30000.0,600.0
+2026-03-06,D,False,8.0,0.0,0.0,0.0

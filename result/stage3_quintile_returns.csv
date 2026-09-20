@@ -1,0 +1,6 @@
+date,quintile,original_count,valid_return_count,mean_future_return,missing_return_count
+2026-03-02,G1,2,2,-0.02,0
+2026-03-02,G2,1,1,0.0,0
+2026-03-02,G3,2,1,0.02,1
+2026-03-02,G4,1,1,0.04,0
+2026-03-02,G5,1,1,0.06,0

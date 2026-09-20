@@ -1,0 +1,4 @@
+code,actual_weight,target_weight,weight_change,side
+A,0.55,0.5,-0.050000000000000044,卖出
+B,0.45,0.0,-0.45,卖出
+C,0.0,0.5,0.5,买入

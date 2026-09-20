@@ -1,0 +1,6 @@
+date,code,momentum_20d,eligible,selection_rank,selected
+2026-03-06,A,0.08,True,1.0,True
+2026-03-06,C,0.03,True,2.0,True
+2026-03-06,B,-0.02,True,3.0,False
+2026-03-06,D,0.5,False,,False
+2026-03-06,E,,True,,False
